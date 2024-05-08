@@ -1,27 +1,39 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f0f0f0;
+}
+
+#signatureCanvas {
+	border: 2px solid #000;
+	margin-right: 20px;
+}
+
 .input-group {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
   }
-  
+
   .input-group label {
-    display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
-  
-  .input-group input,
-  .input-group textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  @media (max-width: 600px) {
-    .input-group {
-      flex-direction: column;
-    }
-  
-    .input-group label {
-      margin-bottom: 3px;
-    }
-  }
+}

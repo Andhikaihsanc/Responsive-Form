@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form id="myForm">
-        <div class="input-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-        </div>
-        <div class="input-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-        </div>
-        <div class="input-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-        <!-- <button type="button" id="submit">Submit</button> -->
-      </form>
-      <script src="index.js"></script>
+  <form id="myForm">
+    <div class="input-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div class="input-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div class="input-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <!-- <button type="button" id="submit">Submit</button> -->
+    <div class="input-group">
+      <label for="signature">Signature: </label>
+      <br>
+      <canvas id="signatureCanvas"></canvas>
+      <button id="clear">Clear</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
 </body>
+
 </html>
