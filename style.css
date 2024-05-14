@@ -1,5 +1,6 @@
 body {
 	display: flex;
+  flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: #f0f0f0;
@@ -36,4 +37,8 @@ body {
   .input-group label {
     margin-bottom: 3px;
   }
+}
+
+#saveButton, #clearButton{
+  flex-direction: row;
 }
