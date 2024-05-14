@@ -2,6 +2,7 @@ const canvas = document.getElementById('signatureCanvas');
 const ctx = canvas.getContext('2d');
 let drawing = false;
 let lastX, lastY;
+let signatureBox;
 
 // Mouse events
 canvas.addEventListener('mousedown', (e) => {
@@ -54,4 +55,13 @@ canvas.addEventListener('touchend', () => {
 // Clear button
 document.getElementById('clear').addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+// Save button
+document.getElementById('save').addEventListener('click', () => {
+  drawing = false;
+  signatureBox = new Image();
+  signatureBox.src = canvas.toDataURL();
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(signatureBox, 0, 0, 200, 100);
 });
